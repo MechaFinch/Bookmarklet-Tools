@@ -1,3 +1,6 @@
-(function(){
-  console.log('hi');
-}());
+function test(){
+  alert('hi');
+  alert("hello");
+}
+
+test();
