@@ -20,10 +20,10 @@
       <a href="javascript:(function(){alert(&quot;Instructions:\n-Press and hold escape for maximum speed\n-Type 'exit' to stop. Then press escape and copy the answer until you exit.&quot;); var win = window.QJP([], [], [&quot;hyek&quot;]).a; var orig = win.grader.grade.bind(win.grader); win.grader.grade = function(a, b, c){if(b == &quot;exit&quot;){win.grader.grade = orig;} return true;}})()">Gravity</a><br>
     <h4>2048</h4>
       <a href="javascript:(function(){var a = prompt(&quot;Enter the lower possible value for tiles&quot;, 2);var b = prompt(&quot;Enter the upper possible value for tiles&quot;, 4);GameManager.prototype.addRandomTile = function (){if(this.grid.cellsAvailable()){var value = Math.random() &lt; 0.9 ? a : b;var tile = new Tile(this.grid.randomAvailableCell(), value);this.grid.insertTile(tile);}};})()">Block Values</a><br>
-    <p>This one allows you to change the possible values of new blocks</p>
+    This one allows you to change the possible values of new blocks
     <h4>Fun stuff</h4>
       <a href="javascript:(function(){while(true){console.log('asdf');}})()">Chrome Softlock</a><br>
-    <p>This one softlocks chrome on a PC and makes it increadibly laggy on a chromebook</p>
+    This one softlocks chrome on a PC and makes it increadibly laggy on a chromebook
   </body>
   <script src="test.js"></script>
 </html>
