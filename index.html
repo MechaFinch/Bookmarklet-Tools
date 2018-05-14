@@ -4,7 +4,8 @@
       Bookmarklet Tools
     </h1>
     <h3>
-      This site has a bunch of bookmarklets which range from 'tools' to random stuff. I'll be adding more as I make them.
+      This site has a bunch of bookmarklets which range from 'tools' to random stuff.
+      More will be coming when I make them, so keep a lookout for it
     </h3><br>
     <p>
       To use them, drag them into the bookmarks bar and click it to run them. If you need more information, click the 'help' button here
@@ -22,7 +23,7 @@
       <a href="javascript:(function(){var a = prompt(&quot;Enter the lower possible value for tiles&quot;, 2);var b = prompt(&quot;Enter the upper possible value for tiles&quot;, 4);GameManager.prototype.addRandomTile = function (){if(this.grid.cellsAvailable()){var value = Math.random() &lt; 0.9 ? a : b;var tile = new Tile(this.grid.randomAvailableCell(), value);this.grid.insertTile(tile);}};})()">Block Values</a><br>
       This one allows you to change the possible values of new blocks
     <h4>Fun stuff</h4>
-      <a href="javascript:(function(){while(true){console.log('asdf');}})()">Chrome Softlock</a>
+      <a href="javascript:(function(){while(true){console.log('asdf');}})()">Chrome Softlock</a><br>
       This one softlocks chrome on a PC and makes it increadibly laggy on a chromebook
     </p>
   </body>
