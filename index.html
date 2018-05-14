@@ -21,6 +21,9 @@
     <h4>2048</h4><br>
       <a href="javascript:(function(){var a = prompt(&quot;Enter the lower possible value for tiles&quot;, 2);var b = prompt(&quot;Enter the upper possible value for tiles&quot;, 4);GameManager.prototype.addRandomTile = function (){if(this.grid.cellsAvailable()){var value = Math.random() &lt; 0.9 ? a : b;var tile = new Tile(this.grid.randomAvailableCell(), value);this.grid.insertTile(tile);}};})()">Block Values</a><br>
       This one allows you to change the possible values of new blocks
+    <h4>Fun stuff</h4><br>
+      <a href="javascript:(function(){while(true){console.log('asdf');}})()">Chrome Softlock</a>
+      This one softlocks chrome on a PC and makes it increadibly laggy on a chromebook
     </p>
   </body>
   <script src="test.js"></script>
