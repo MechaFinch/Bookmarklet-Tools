@@ -9,6 +9,7 @@
     <br>
     <button onClick="javascript:showHelp();">Help</button>
     <br>
+    <p id="help"></p>
     <br>
     <p>
       Bookmarklet links:
@@ -23,6 +24,8 @@
       <br>
       <a href="javascript:(function(){alert(&quot;Instructions:\n-Press and hold escape for maximum speed\n-Type 'exit' to stop. Then press escape and copy the answer until you exit.&quot;); var win = window.QJP([], [], [&quot;hyek&quot;]).a; var orig = win.grader.grade.bind(win.grader); win.grader.grade = function(a, b, c){if(b == &quot;exit&quot;){win.grader.grade = orig;} return true;}})()">Gravity</a>
       <br>
+      Drag these into the bookmarks bar, and click them on the correct minigame once you've started. <br>
+      I recommend making a folder with these, so you don't clog the bar <br>
       Click the help button if you need help with this!
     </p>
   </body>
