@@ -1,30 +1,26 @@
 <html>
-  <head>
-    <h1>
-      Website is being created please wait
-    </h1>
-  </head>
   <body>
-    <br>
-    <button onClick="javascript:showHelp();">Help</button>
-    <br>
+    <h1>
+      Bookmarklet Tools
+    </h1>
+    <h3>
+      This site has a bunch of bookmarklets which range from 'tools' to random stuff. I'll be adding more as I make them.
+    </h3><br>
+    <p>
+      To use them, drag them into the bookmarks bar and click it to run them. If you need more information, click the 'help' button here
+    </p>
+    <button onClick="javascript:showHelp();">Help</button><br>
     <p id="help"></p>
     <p>
-      Bookmarklet links:
-      <br>
-      <a href="javascript:(function(){alert(&quot;Instructions:\n-Type anything and press enter\n-For maximum efficiency, type '1234' and press enter over and over at high speed\nThe window freezing is normal if you're spamming fast&quot;); window.QJP([], [], [&quot;OpTK&quot;]).a.prototype.grade = function(e){return 1;}})()">Learn</a>
-      <br>
-      <a href="javascript:(function(){alert(&quot;Instructions:\nPress and hold enter until it completes&quot;); window.QJP([], [], [&quot;Qok6&quot;]).d.prototype.gradeText = function(e, t, n, r){return true;}})()">Write</a>
-      <br>
-      <a href="javascript:(function(){alert(&quot;Instructions:\nPress and hold enter until it completes&quot;); window.QJP([], [], [&quot;v2Ik&quot;]).a.prototype.grade = function(e, t, n){return true;}})()">Spell</a>
-      <br>
-      <a href="javascript:(function(){var a = prompt(&quot;Instructions:\n1.Enter the desired time in seconds\n2. Complete the match&quot;, 3.25); window.QJP([], [], [&quot;3z4y&quot;]).a.prototype.getTimeForScoring = function(){return a * 10;}})()">Match</a>
-      <br>
-      <a href="javascript:(function(){alert(&quot;Instructions:\n-Press and hold escape for maximum speed\n-Type 'exit' to stop. Then press escape and copy the answer until you exit.&quot;); var win = window.QJP([], [], [&quot;hyek&quot;]).a; var orig = win.grader.grade.bind(win.grader); win.grader.grade = function(a, b, c){if(b == &quot;exit&quot;){win.grader.grade = orig;} return true;}})()">Gravity</a>
-      <br>
-      Drag these into the bookmarks bar, and click them on the correct minigame once you've started. <br>
-      I recommend making a folder with these, so you don't clog the bar <br>
-      Click the help button if you need help with this!
+    <h4>Quizlet Tools</h4><br>
+      <a href="javascript:(function(){alert(&quot;Instructions:\n-Type anything and press enter\n-For maximum efficiency, type '1234' and press enter over and over at high speed\nThe window freezing is normal if you're spamming fast&quot;); window.QJP([], [], [&quot;OpTK&quot;]).a.prototype.grade = function(e){return 1;}})()">Learn</a><br>
+      <a href="javascript:(function(){alert(&quot;Instructions:\nPress and hold enter until it completes&quot;); window.QJP([], [], [&quot;Qok6&quot;]).d.prototype.gradeText = function(e, t, n, r){return true;}})()">Write</a><br>
+      <a href="javascript:(function(){alert(&quot;Instructions:\nPress and hold enter until it completes&quot;); window.QJP([], [], [&quot;v2Ik&quot;]).a.prototype.grade = function(e, t, n){return true;}})()">Spell</a><br>
+      <a href="javascript:(function(){var a = prompt(&quot;Instructions:\n1.Enter the desired time in seconds\n2. Complete the match&quot;, 3.25); window.QJP([], [], [&quot;3z4y&quot;]).a.prototype.getTimeForScoring = function(){return a * 10;}})()">Match</a><br>
+      <a href="javascript:(function(){alert(&quot;Instructions:\n-Press and hold escape for maximum speed\n-Type 'exit' to stop. Then press escape and copy the answer until you exit.&quot;); var win = window.QJP([], [], [&quot;hyek&quot;]).a; var orig = win.grader.grade.bind(win.grader); win.grader.grade = function(a, b, c){if(b == &quot;exit&quot;){win.grader.grade = orig;} return true;}})()">Gravity</a><br>
+    <h4>2048</h4><br>
+      <a href="javascript:(function(){var a = prompt(&quot;Enter the lower possible value for tiles&quot;, 2);var b = prompt(&quot;Enter the upper possible value for tiles&quot;, 4);GameManager.prototype.addRandomTile = function (){if(this.grid.cellsAvailable()){var value = Math.random() &lt; 0.9 ? a : b;var tile = new Tile(this.grid.randomAvailableCell(), value);this.grid.insertTile(tile);}};})()">Block Values</a><br>
+      This one allows you to change the possible values of new blocks
     </p>
   </body>
   <script src="test.js"></script>
