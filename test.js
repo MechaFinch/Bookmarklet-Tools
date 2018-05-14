@@ -1,3 +1,11 @@
+var helping = false;
+var par = document.getElementById("help");
+
 function showHelp() {
-  alert("To use the tools given, drag the links into a bookmark\nThis creates a bookmarklet, or a script you can run anywhere by clicking the bookmark\nI recommend placing the bookmarks in a folder");
+  helping = !helping;
+  if(helping){
+    par.innerHTML = "To create a bookmark, click and drag the link into the bookmarks bar.<br>If you want to create a folder for bookmarks, in chrome at least, right click the bar and click &quot;Create folder...&quot;.<br>To put a bookmark in a folder, either drag the link onto/into the folder, drag the bookmark onto/into the folder, or click &quot;Bookmark manager&quot; on the right click dropdown menu.";
+  } else {
+    par.innerHTML = "";
+  }
 }
